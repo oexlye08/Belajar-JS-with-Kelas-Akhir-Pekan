@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Case</title>
+</head>
+<body>
+    <script>
+        var makanan = prompt("Silahkan pilih makanan : \n1. Nasi Goreng \n2. Mie Goreng");
+        var total = 0;
+        var makanan1 = 15000;
+        var makanan2 = 10000;
+        var minuman1 = 5000;
+        var minuman2 = 7000;
+        var porsi = parseInt(prompt("Silahkan masukkan jumlah porsi : "));
+        document.write("Pesanan Anda : <br>");
+        if (makanan == 1) {
+            document.write("Makanan : Nasi Goreng, harga "+makanan1+"<br>"+ "Porsi : "+porsi+"<br> harga : Rp. "+(makanan1 * porsi)+" <br>");
+            total = total + (makanan1 * porsi);
+        } else if (makanan == 2) {
+            document.write("Makanan : Mie Goreng, harga "+makanan2+ "<br>"+ "Porsi : "+porsi+"<br> harga : Rp. "+(makanan2 * porsi)+" <br>");
+            total = total + (makanan2 * porsi);
+        } else {
+            alert("Makanan : Tidak ada");
+        }
+        
+        var minuman = prompt("Silahkan pilih minuman : \n1. Es Teh \n2. Es Jeruk");
+        var porsi = parseInt(prompt("Silahkan masukkan jumlah porsi : "));
+        if (minuman == 1) {
+            document.write("Minuman : Es Teh, harga "+minuman1+" <br>"+ "Porsi : "+porsi+"<br> harga : Rp. "+(minuman1 * porsi)+" <br>");
+            total = total + (minuman1 * porsi);
+        } else if (minuman == 2) {
+            document.write("Minuman : Es Jeruk, harga "+minuman2+" <br>"+ "Porsi : "+porsi+"<br> harga : Rp. "+(minuman2 * porsi)+" <br>");
+            total = total + (minuman2 * porsi);
+        } else {
+            alert("Minuman : Tidak ada");
+        }
+        document.write("Total : Rp. " + total);
+    </script>
+</body>
+</html>
