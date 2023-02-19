@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow</title>
+</head>
+<body>
+    <script>
+        // Control Flow adalah sebuah alur program yang akan dijalankan oleh program
+        // Pencabangan / pengkondisian adalah sebuah alur program yang akan dijalankan berdasarkan kondisi yang terpenuhi / diinginkan
+        // var nilai  = 5;
+        // var nilai  = parseInt(prompt("Masukkan nilai anda"));
+        // document.write("Nilai anda adalah " + nilai);
+        // document.write("<br>");
+        // if (nilai > 7) {
+        //     document.write("Nilai anda :"+nilai+" Nilai anda memenuhi syarat");
+        // } else {
+        //     document.write("Nilai anda : "+nilai+" Nilai anda tidak memenuhi syarat");
+        // }
+
+        // document.write("<br>");
+
+        // if else if
+        // var nilai  = parseInt(prompt("Masukkan nilai anda"));
+        // document.write("Nilai anda adalah " + nilai);
+        // document.write("<br>");
+        // if (nilai > 7) {
+        //     document.write("Nilai anda :"+nilai+" Nilai anda memenuhi syarat");
+        // } else if (nilai > 5) {
+        //     document.write("Nilai anda : "+nilai+" Nilai anda cukup memenuhi syarat");
+        // } else {
+        //     document.write("Nilai anda : "+nilai+" Nilai anda tidak memenuhi syarat");
+        // }
+
+        document.write("<br>");
+        // switch case adalah sebuah alur program yang akan dijalankan berdasarkan kondisi yang terpenuhi / diinginkan
+        var nilai  = parseInt(prompt("Masukkan nilai anda"));
+        document.write("Nilai anda adalah " + nilai);
+        document.write("<br>");
+        switch (true) {
+            case nilai > 7:
+                document.write("Nilai anda :"+nilai+" Nilai anda memenuhi syarat");
+                break;
+            case nilai > 5:
+                document.write("Nilai anda :"+nilai+" Nilai anda cukup memenuhi syarat");
+                break;
+            default:
+                document.write("Nilai anda : "+nilai+" Nilai anda tidak memenuhi syarat");
+                break;
+        }
+        
+    </script>
+</body>
+</html>
